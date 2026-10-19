@@ -11,7 +11,7 @@ const LINKS = [
   { to: "/news", label: "Yangiliklar" },
   { to: "/projects", label: "Loyihalar" },
   { to: "/achievements", label: "Yutuqlar" },
-  { to: "/contact", label: "Aloqa" },
+  
 ];
 
 function Logo() {
