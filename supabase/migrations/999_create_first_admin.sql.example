@@ -1,0 +1,7 @@
+-- Birinchi administratorni yaratish (Supabase SQL Editor'da qo'lda bajariladi).
+-- 1) Supabase > Authentication > Users > "Add user" orqali email va parol bilan foydalanuvchi yarating
+--    ("Auto Confirm User" ni yoqing).
+-- 2) Quyidagi emailni o'zingiznikiga almashtirib, so'rovni ishga tushiring:
+insert into public.admin_users (user_id, email)
+select id, email from auth.users where email = 'ADMIN_EMAIL@example.com'
+on conflict (user_id) do nothing;
