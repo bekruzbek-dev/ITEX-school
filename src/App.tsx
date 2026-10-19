@@ -10,7 +10,7 @@ import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
 import Projects from "./pages/Projects";
 import Achievements from "./pages/Achievements";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 
 const AdminLayout = lazy(() => import("./layouts/AdminLayout"));
 const AdminLogin = lazy(() => import("./pages/admin/AdminLogin"));
@@ -45,7 +45,7 @@ export default function App() {
           <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/achievements" element={<Achievements />} />
-           <Route path="/contact" element={<Contact />} />
+           {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="*" element={<NotFound />} />
         </Route>
 
